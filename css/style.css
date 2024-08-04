@@ -1,31 +1,53 @@
-.cabecera{
-    display: flex;
-    align-items: center;
-
+*{
+    padding: 0;
+    margin: 0;
 }
-
-
-
 body{
-
     background-color: #D8DFE8;
     color: #0A3871;
     height: 100vh;
     box-sizing: border-box;
-
-    /* D8DFE8  */
-
 }
-
+.cabecera{
+    display: flex;
+    background-color: #E8E8E8
+}
+.logo__empresa{
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    width: 10%;
+}
+.titulo__pagina{
+    text-align:justify;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
 .seccion__ingreso__texto{
-background-color: #FFFFFF;
+    background-color: #FFFFFF;
     padding: 20px;
     margin: 20px;
+}
+.campo__mensaje__ingresado{
+    color: #FFFFFF;
+}
+::placeholder{
+    color: #0A3871;
+}
+.campo__mensaje__ingresado:focus{
+    outline: none;
 }
 .contenido__general{
     display: flex;
     align-items: center;
 }
+.formato__botones{
+    display: flex;
+    padding: 20px;
+    margin: 10px;
+}
+
 .formato__boton__encriptar{
     background-color: #D8DFE8;
     color: #0A3871;
@@ -44,6 +66,28 @@ background-color: #FFFFFF;
     border-radius: 8px;
 
 }
+.seccion__salida__texto{
+    background-color: #FFFFFF;
+    padding: 20px;
+    margin: 20px;
+    align-items: center;
+}
+.campo__mensaje__salida{
+    background-color: #FFFFFF;
+    background-image: url(/imagen/Muneco.png);
+    background-repeat: no-repeat;
+
+}
+.formato__boton__copiar{
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border: 2px solid var(--color-terciaria);
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    border-radius: 8px; 
+}
+
 .pie__pagina{
     background-color: #E8E8E8;
 }
