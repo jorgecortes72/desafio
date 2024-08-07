@@ -30,7 +30,7 @@ body{
     margin: 20px;
 }
 .campo__mensaje__ingresado{
-    color: #FFFFFF;
+    color: #0A3871;
 }
 ::placeholder{
     color: #0A3871;
@@ -76,6 +76,7 @@ body{
     background-color: #FFFFFF;
     background-image: url(/imagen/Muneco.png);
     background-repeat: no-repeat;
+    color: #0A3871;
 
 }
 .formato__boton__copiar{
