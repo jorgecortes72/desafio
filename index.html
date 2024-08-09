@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio Encriptador</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
+    <title>Desafio Encriptador</title>
+
 
 </head>
 <body>
@@ -33,7 +37,7 @@
             <!--<div class="ingreso__texto"> 
                
                 <h2 class="mensaje__texto">Ingrese el texto aqui</h2> -->
-                <textarea class="campo__mensaje__ingresado"  name="mensaje__ingresado" cols="30" rows="10" id="texto_ingresado" placeholder="Ingrese el texto aqui"></textarea>
+                <textarea class="campo-mensaje-ingresado" cols="30" rows="10"  placeholder="Ingrese el texto aqui"></textarea>
 
            <!--  </div> -->
         <!-- mensaje de informacion -->
@@ -43,7 +47,7 @@
 
         <!-- botones -->
             <div class="formato__botones">
-                <button class="formato__boton__encriptar" onclick="btnEncriptar">Encriptar</button>
+                <button onclick="btnEncriptar(mensajeIngresado)" class="formato__boton__encriptar" >Encriptar</button>
                 <button class="formato__boton__desencriptar">Desencriptar</button>
             </div>
 
@@ -55,7 +59,7 @@
         <section class="seccion__salida__texto">
          <!-- texto -->
              <!-- <div class="salida__texto" > -->
-                <textarea class="campo__mensaje__salida" name="mensaje__salida" cols="30" rows="10"></textarea>
+                <textarea class="campo__mensaje__salida" name="salida" cols="30" rows="10"></textarea>
                 <!-- <img src="/imagen/Muneco.png" alt="imagen muñeco"> -->
                 <h2 class="mensaje__texto">texto DESENCRIPTADO</h2>
 
