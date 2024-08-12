@@ -108,3 +108,19 @@ function desencriptar(mensajeIngresado){
     return mensajeIngresado;
 
 }
+
+// FUNCION COPIAR AL PORTAPAPELES
+
+function btncopiar(mensajeSalida){
+
+
+    // const mensajeSalida= document.querySelector(".campo__mensaje__salida");
+
+    console.log(mensajeSalida);
+    mensajeSalida.value= mensajeSalida;
+    // mensajeSalida.Select();
+    console.log(mensajeSalida.value);
+
+    // Navigator.clipboard.writeText(mensajeSalida.value);
+    
+}

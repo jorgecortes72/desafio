@@ -82,6 +82,7 @@ body{
 
 }
 .formato__boton__copiar{
+    /* display: flex; */
     background-color: #D8DFE8;
     color: #0A3871;
     border: 2px solid var(--color-terciaria);
