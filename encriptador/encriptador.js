@@ -13,7 +13,7 @@ La letra "u" es convertida para "ufat"
 // Asignacion del arreglo Matriz
 
 // let llaveEncriptacion=[["e","enter"],["i","imes"],["a","ai"],["o","ober"],["u","ufat"]];
-console.log(mensajeIngresado);
+//console.log(mensajeIngresado);
 
 
 // BLOQUE ENCRIPTAR 
@@ -27,9 +27,10 @@ function btnEncriptar(mensajeIngresado){
     mensajeSalida.value= textoEncriptado;
     mensajeSalida.style.backgroundImage="none";
     
-    console.log(mensajeSalida);
+    // console.log(mensajeSalida.value);
 }
 
+// console.log(mensajeSalida.value);
 
 
 function encriptar(mensajeIngresado){
@@ -39,21 +40,21 @@ function encriptar(mensajeIngresado){
 
     let llaveEncriptacion=[["e","enter"],["i","imes"],["a","ai"],["o","ober"],["u","ufat"]];
 
-    console.table(llaveEncriptacion);
+    // console.table(llaveEncriptacion);
 
     // for (j=1; j <=mensajeIngresado.length;j++){
 
         for (i=0; i < llaveEncriptacion.length; i++){
 
-            console.log(mensajeIngresado[[i][0]]);
+           // console.log(mensajeIngresado[[i][0]]);
             // console.log(mensajeIngresado[[j][0]]);
-            console.log(llaveEncriptacion[i][0]);
+           // console.log(llaveEncriptacion[i][0]);
 
             if(mensajeIngresado.includes(llaveEncriptacion[i][0])){
 
-                console.log(i);
+               // console.log(i);
                 mensajeIngresado= mensajeIngresado.replaceAll(llaveEncriptacion[i][0], llaveEncriptacion[i][1]);
-                console.log(mensajeIngresado[i][1]);
+               // console.log(mensajeIngresado[i][1]);
             }
         }
     // }
@@ -74,7 +75,7 @@ function btnDesencriptar(mensajeIngresado){
     mensajeSalida.value= textoEncriptado;
     mensajeSalida.style.backgroundImage="none";
     
-    console.log(mensajeSalida);
+    // console.log(mensajeSalida);
 }
 
 
@@ -86,21 +87,21 @@ function desencriptar(mensajeIngresado){
 
     let llaveEncriptacion=[["e","enter"],["i","imes"],["a","ai"],["o","ober"],["u","ufat"]];
 
-    console.table(llaveEncriptacion);
+    // console.table(llaveEncriptacion);
 
     // for (j=1; j <=mensajeIngresado.length;j++){
 
         for (i=0; i < llaveEncriptacion.length; i++){
 
-            console.log(mensajeIngresado[[i][0]]);
+            // console.log(mensajeIngresado[[i][0]]);
             // console.log(mensajeIngresado[[j][0]]);
-            console.log(llaveEncriptacion[i][0]);
+           // console.log(llaveEncriptacion[i][0]);
 
             if(mensajeIngresado.includes(llaveEncriptacion[i][1])){
 
-                console.log(i);
+               // console.log(i);
                 mensajeIngresado= mensajeIngresado.replaceAll(llaveEncriptacion[i][1], llaveEncriptacion[i][0]);
-                console.log(mensajeIngresado[i][1]);
+                // console.log(mensajeIngresado[i][1]);
             }
         }
     // }
@@ -113,14 +114,13 @@ function desencriptar(mensajeIngresado){
 
 function btncopiar(mensajeSalida){
 
+    const mensajeSalida01= document.querySelector(".campo__mensaje__salida");
 
-    // const mensajeSalida= document.querySelector(".campo__mensaje__salida");
+    console.log(mensajeSalida01.value);
+    // mensajeSalida.value= mensajeSalida;
+    // mensajeSalida01.Select();
+    // console.log(mensajeSalida.value);
 
-    console.log(mensajeSalida);
-    mensajeSalida.value= mensajeSalida;
-    // mensajeSalida.Select();
-    console.log(mensajeSalida.value);
-
-    // Navigator.clipboard.writeText(mensajeSalida.value);
+   // Navigator.clipboard.write(mensajeSalida01.value);
     
 }
