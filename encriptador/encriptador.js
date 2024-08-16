@@ -112,11 +112,39 @@ function desencriptar(mensajeIngresado){
 
 // FUNCION COPIAR AL PORTAPAPELES
 
-function btncopiar(mensajeSalida){
+function btncopiar(){
 
+    console.log('estoy en funcion');
     const mensajeSalida01= document.querySelector(".campo__mensaje__salida");
 
-    console.log(mensajeSalida01.value);
+           // console.log(mensajeSalida01.value);
+
+    /* const mensajeSalida = async () => {
+
+        try {
+            const mensajeSalida01= document.querySelector(".campo__mensaje__salida");
+
+            console.log(mensajeSalida01.value); */
+
+            // await navigator.clipboard.writeText(mensajeSalida01);
+            navigator.clipboard.writeText(mensajeSalida01.value);
+
+            alert('el texto se ha copiado');
+            location.reload();
+       
+       /* } catch (error){
+            console.log(error);
+
+        }
+
+    }*/
+
+    // const mensajeSalida01= document.querySelector(".campo__mensaje__salida");
+
+   // await navigator.clipboard.writeText(mensajeSalida01);
+
+
+    // console.log(mensajeSalida01.value);
     // mensajeSalida.value= mensajeSalida;
     // mensajeSalida01.Select();
     // console.log(mensajeSalida.value);
