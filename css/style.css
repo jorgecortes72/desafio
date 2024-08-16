@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+
+:root {
+    --color-primaria: #000000;
+    --color-secundaria: #F6F6F6;
+    --color-terciaria: #22D4FD;
+    --color-hover: #272727;
+    --fuente-krona: 'Krona One', sans-serif;
+    --fuente-montserrat: 'Montserrat', sans-serif;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -10,6 +22,7 @@ body{
 }
 .cabecera{
     display: flex;
+    flex-direction: row;
     background-color: #E8E8E8;
     /*justify-content: space-between;*/
     width: 100%;
@@ -28,17 +41,27 @@ body{
     margin: 10px;
     width: 80%;
     justify-content: center;
-    font-size: 32px;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family: var(--fuente-montserrat);
 }
 .seccion__ingreso__texto{
-    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    background-color: #D8DFE8;
     padding: 20px;
     margin: 20px;
-    width: 50%;
+    width: 60%;
+    justify-content: center;
+    border-radius: 8px;
+    /* font-size: 1.5rem;
+    font-weight: 300;
+    font-family: var(--fuente-montserrat); */
 }
 .campo-mensaje-ingresado{
+    background-color: #D8DFE8;
     color: #0A3871;
+    border-color: #D8DFE8;
     text-align:justify;
     align-items: center;
     padding: 10px;
@@ -46,6 +69,7 @@ body{
     width: 90%;
     height: 90%;
     justify-content: center;
+    border-radius: 8px;
 }
 ::placeholder{
     color: #0A3871;
@@ -57,59 +81,83 @@ body{
     display: flex;
     align-items: center;
 }
+.mensaje_informacion{
+    align-items: center;
+    text-align: center;
+}
 .formato__botones{
     display: flex;
+    flex-direction: row;
     padding: 5px;
     /*margin: 5%;*/
     align-items: center;
     justify-content: space-between;
+    gap: 30;
 }
-
 .formato__boton__encriptar{
     background-color: #D8DFE8;
     color: #0A3871;
-    border: 2px solid var(--color-terciaria);
-    width: 50%;
+    padding: 10px ;
+    border: 2px solid var(--color-hover);
+    width: 40%;
     text-align: center;
     margin: 10px;
     border-radius: 7px;
-
+    /* font-size: 1.5rem; */
 }
 .formato__boton__desencriptar{
     background-color: #0A3871;
     color: #D8DFE8;
-    border: 2px solid var(--color-terciaria);
-    width: 50%;
+    padding: 10px;
+    border: 2px solid var(--color-hover);
+    width: 40%;
     text-align: center;
     margin: 10px;
     border-radius: 8px;
-
 }
 .seccion__salida__texto{
+    display: flex;
+    flex-direction: column;
     background-color: #FFFFFF;
     padding: 20px;
     margin: 20px;
+    justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 40%;
+    border-radius: 8px;
 }
 .campo__mensaje__salida{
     background-color: #FFFFFF;
     background-image: url(/imagen/Muneco.png);
+    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
+    border-color: #FFFFFF;
     color: #0A3871;
-
+    text-align:justify;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    width: 90%;
+    height: 90%;
+    justify-content: center;
+    border-radius: 8px;
+}
+.mensaje__texto{
+    text-align: center;
 }
 .formato__boton__copiar{
-    /* display: flex; */
     background-color: #D8DFE8;
     color: #0A3871;
-    border: 2px solid var(--color-terciaria);
-    width: 50%;
+    padding: 10px;
+    border: 2px solid var(--color-hover);
+    width: 100%; 
     text-align: center;
-    align-items: center;
+    /* align-items: center; */
+    margin: 10px;
     border-radius: 8px; 
+    /* justify-content: center;*/
 }
-
 .pie__pagina{
     background-color: #E8E8E8;
 }
@@ -122,4 +170,39 @@ body{
     color: #9B9797;
     text-align: center;
     font-size: 10px;
+}
+@media (max-width: 768px) {
+
+    .cabecera{
+        flex-direction: column;
+        justify-content: right;
+         padding: 1%;  
+    }
+    .logo__empresa{
+        padding: 2px;
+        margin: 2px;
+        width: 10%;
+    }
+    .titulo__pagina{
+        text-align:center;
+        align-items: center;
+        padding: 1px;
+        margin: 1px;
+        width: 90%;
+        justify-content: center;
+        font-size: 0.5rem;
+    }
+    .contenido__general{
+        flex-direction: column;
+        padding: 5%;
+
+    }
+    .formato__botones{
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        width: 130%;
+    }
+   
+    
 }
