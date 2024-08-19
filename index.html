@@ -8,77 +8,44 @@
         rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
     <title>Desafio Encriptador</title>
-
-
 </head>
 <body>
-
 <!-- Cabecera de la Pagina -->
     <header class="cabecera">
         <div class="logo__empresa">
-        <img src="/imagen/Logo.png" alt="logo empresa">
+            <img src="/imagen/Logo.png" alt="logo empresa">
         </div>
-
         <div class="titulo__pagina">
-        <h1>Desafío Encriptador</h1>
+            <h1>Desafío Encriptador</h1>
         </div>
-
     </header>
-
 <!-- contenido de la pagina -->
-
     <main class="contenido__general">
-
     <!-- Seccion Ingreso Texto a encriptar o desencriptar y botones -->
-
         <section class="seccion__ingreso__texto">
-        <!-- texto -->
-
-            <!--<div class="ingreso__texto"> 
-               
-                <h2 class="mensaje__texto">Ingrese el texto aqui</h2> -->
-                <textarea class="campo-mensaje-ingresado"  name="ingreso"    placeholder="Ingrese el texto aqui" rows="15"></textarea>
-                <!-- <textarea class="campo-mensaje-ingresado" cols="30" rows="10"  placeholder="Ingrese el texto aqui"></textarea> -->
-                 
-           <!--  </div> -->
-        <!-- mensaje de informacion -->
+            <textarea class="campo-mensaje-ingresado"  name="ingreso"    placeholder="Ingrese el texto aqui" rows="15"></textarea>
             <div class="mensaje_informacion">
                 <h6>Ingresar solo letras minusculas y sin acentos o caracteres especiales</h6>
             </div>
-
         <!-- botones -->
             <div class="formato__botones">
                 <button onclick="btnEncriptar(mensajeIngresado)" class="formato__boton__encriptar" >Encriptar</button>
                 <button onclick="btnDesencriptar(mensajeIngresado)" class="formato__boton__desencriptar">Desencriptar</button>
             </div>
-
-
         </section>
-        
     <!-- Seccion salida Texto encriptado o desencriptado y boton copiar -->
-
         <section class="seccion__salida__texto">
-         <!-- texto -->
-             <!-- <div class="salida__texto" > -->
-                <textarea class="campo__mensaje__salida" name="salida" rows="15"></textarea>
-                <!-- <img src="/imagen/Muneco.png" alt="imagen muñeco"> -->
+            <textarea class="campo__mensaje__salida" name="salida" rows="15"></textarea>
                 <h6 class="mensaje__texto">Texto Desencriptado</h6>
-
-            <!-- </div> -->
-        <!-- boton copiar -->
+            <!-- boton copiar -->
             <div class="formato__botones">
-                <!-- <button  onclick="btncopiar(mensajeSalida)" >Copiar</button> -->
-                <!-- <button class="formato__boton__copiar" onclick={copyToClipboard}>Copiar</button> -->
-                <button  onclick="btncopiar()" class="formato__boton__copiar">Copiar</button>
+                 <button  onclick="btncopiar()" class="formato__boton__copiar">Copiar</button>
             </div>
-            
-
-        </section>
-
+         </section>
     </main>
-
+    <!-- Llamado a programa java encriptado -->
     <script src="/encriptador/encriptador.js"></script>
-
+    <!-- Pie de Pagina -->
     <footer class="pie__pagina">
         <h5 class="texto__pie__pagina__1">Encriptador creado por JC para Oracle One y Alura Latam</h5>
         <h6 class="texto__pie__pagina__2">Arica - Chile</h6>

@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
-
 :root {
     --color-primaria: #000000;
     --color-secundaria: #F6F6F6;
@@ -9,7 +8,6 @@
     --fuente-krona: 'Krona One', sans-serif;
     --fuente-montserrat: 'Montserrat', sans-serif;
 }
-
 *{
     padding: 0;
     margin: 0;
@@ -24,7 +22,6 @@ body{
     display: flex;
     flex-direction: row;
     background-color: #E8E8E8;
-    /*justify-content: space-between;*/
     width: 100%;
 }
 .logo__empresa{
@@ -54,9 +51,6 @@ body{
     width: 60%;
     justify-content: center;
     border-radius: 8px;
-    /* font-size: 1.5rem;
-    font-weight: 300;
-    font-family: var(--fuente-montserrat); */
 }
 .campo-mensaje-ingresado{
     background-color: #D8DFE8;
@@ -89,7 +83,6 @@ body{
     display: flex;
     flex-direction: row;
     padding: 5px;
-    /*margin: 5%;*/
     align-items: center;
     justify-content: space-between;
     gap: 30;
@@ -103,7 +96,6 @@ body{
     text-align: center;
     margin: 10px;
     border-radius: 7px;
-    /* font-size: 1.5rem; */
 }
 .formato__boton__desencriptar{
     background-color: #0A3871;
@@ -153,10 +145,8 @@ body{
     border: 2px solid var(--color-hover);
     width: 100%; 
     text-align: center;
-    /* align-items: center; */
     margin: 10px;
     border-radius: 8px; 
-    /* justify-content: center;*/
 }
 .pie__pagina{
     background-color: #E8E8E8;
@@ -172,7 +162,6 @@ body{
     font-size: 10px;
 }
 @media (max-width: 768px) {
-
     .cabecera{
         flex-direction: column;
         justify-content: right;
@@ -195,7 +184,6 @@ body{
     .contenido__general{
         flex-direction: column;
         padding: 5%;
-
     }
     .formato__botones{
         flex-direction: column;
@@ -203,6 +191,4 @@ body{
         margin: 0;
         width: 130%;
     }
-   
-    
 }
