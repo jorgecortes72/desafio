@@ -120,7 +120,7 @@ body{
 }
 .campo__mensaje__salida{
     background-color: #FFFFFF;
-    background-image: url(/imagen/Muneco.png);
+    background-image: url(/desafio/imagen/Muneco.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
